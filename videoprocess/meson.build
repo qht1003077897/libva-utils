@@ -10,6 +10,9 @@ executable('vppchromasitting', [ 'vppchromasitting.cpp' ],
 executable('vppdenoise', [ 'vppdenoise.cpp' ],
            dependencies: libva_display_dep,
            install: true)
+executable('vppskintone', [ 'vppskintone.cpp' ],
+           dependencies: libva_display_dep,
+           install: true)
 executable('vppscaling_csc', [ 'vppscaling_csc.cpp' ],
            dependencies: libva_display_dep,
            install: true)
