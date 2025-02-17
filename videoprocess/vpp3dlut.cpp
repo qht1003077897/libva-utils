@@ -1553,5 +1553,9 @@ int32_t main(int32_t argc, char *argv[])
 
     return 0;
 }
-
+#else
+int32_t main(int32_t argc, char *argv[])
+{
+    return 0;
+}
 #endif
