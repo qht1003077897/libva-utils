@@ -20,7 +20,7 @@
 # TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-bin_PROGRAMS = vavpp vppscaling_csc vppdenoise vppsharpness vppchromasitting vppblending vppscaling_n_out_usrptr vacopy vpp3dlut vpphdr_tm
+bin_PROGRAMS = vavpp vppscaling_csc vppdenoise vppskintone vppsharpness vppchromasitting vppblending vppscaling_n_out_usrptr vacopy vpp3dlut vpphdr_tm
 
 AM_CPPFLAGS = \
 	-Wall					\
@@ -45,6 +45,9 @@ vppscaling_csc_LDADD = $(TEST_LIBS)
 
 vppdenoise_SOURCES = vppdenoise.cpp
 vppdenoise_LDADD   = $(TEST_LIBS)
+
+vppvppskintone_SOURCES = vppskintone.cpp
+vppvppskintone_LDADD   = $(TEST_LIBS)
 
 vppsharpness_SOURCES = vppsharpness.cpp
 vppsharpness_LDADD   = $(TEST_LIBS)
